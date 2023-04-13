@@ -10,5 +10,5 @@ def solution(x: np.array) -> bool:
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
     alpha = 0.1
-    stat, p_value = stats.ttest_1samp(a=x, popmean=300)
+    t_statistic, p_value = stats.ttest_1samp(a=x, popmean=300)
     return (p_value < alpha)   # Ваш ответ, True или False
